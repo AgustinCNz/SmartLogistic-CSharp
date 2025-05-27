@@ -1,0 +1,70 @@
+[
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V001",
+    "Tipo": "Cami\u00F3n",
+    "CapacidadKg": 5000,
+    "Estado": "Disponible"
+  },
+  {
+    "TieneRefrigeracion": false,
+    "Id": "V002",
+    "Tipo": "Cami\u00F3n",
+    "CapacidadKg": 7000,
+    "Estado": "Disponible"
+  },
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V003",
+    "Tipo": "Furgoneta",
+    "CapacidadKg": 2000,
+    "Estado": "Disponible"
+  },
+  {
+    "TieneRefrigeracion": false,
+    "Id": "V004",
+    "Tipo": "Furgoneta",
+    "CapacidadKg": 1800,
+    "Estado": "Disponible"
+  },
+  {
+    "Id": "V005",
+    "Tipo": "Moto",
+    "CapacidadKg": 100,
+    "Estado": "Disponible"
+  },
+  {
+    "Id": "V006",
+    "Tipo": "Moto",
+    "CapacidadKg": 150,
+    "Estado": "Disponible"
+  },
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V007",
+    "Tipo": "Furgoneta",
+    "CapacidadKg": 2200,
+    "Estado": "Mantenimiento"
+  },
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V008",
+    "Tipo": "Cami\u00F3n",
+    "CapacidadKg": 4500,
+    "Estado": "En ruta"
+  },
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V009",
+    "Tipo": "Cami\u00F3n",
+    "CapacidadKg": 200,
+    "Estado": "Disponible"
+  },
+  {
+    "TieneRefrigeracion": true,
+    "Id": "V010",
+    "Tipo": "Furgoneta",
+    "CapacidadKg": 300,
+    "Estado": "Disponible"
+  }
+]

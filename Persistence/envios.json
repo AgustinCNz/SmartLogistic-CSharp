@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "E001",
+    "Producto": 0,
+    "PesoKg": 2000,
+    "Destino": "C\u00F3rdoba",
+    "FechaEntrega": "2025-05-25T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E002",
+    "Producto": 1,
+    "PesoKg": 1500,
+    "Destino": "Mendoza",
+    "FechaEntrega": "2025-05-26T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E003",
+    "Producto": 2,
+    "PesoKg": 800,
+    "Destino": "Rosario",
+    "FechaEntrega": "2025-05-23T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": false,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E004",
+    "Producto": 0,
+    "PesoKg": 300,
+    "Destino": "La Plata",
+    "FechaEntrega": "2025-05-21T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E005",
+    "Producto": 1,
+    "PesoKg": 4000,
+    "Destino": "Bah\u00EDa Blanca",
+    "FechaEntrega": "2025-05-27T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E006",
+    "Producto": 2,
+    "PesoKg": 300,
+    "Destino": "Tandil",
+    "FechaEntrega": "2025-05-22T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": false,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E007",
+    "Producto": 0,
+    "PesoKg": 1000,
+    "Destino": "Mar del Plata",
+    "FechaEntrega": "2025-05-24T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  },
+  {
+    "Id": "E008",
+    "Producto": 1,
+    "PesoKg": 1,
+    "Destino": "Rosario",
+    "FechaEntrega": "2025-05-30T00:00:00",
+    "Estado": "Pendiente",
+    "RequiereRefrigeracion": true,
+    "VehiculoAsignadoId": null
+  }
+]
