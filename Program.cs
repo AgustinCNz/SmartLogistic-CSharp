@@ -8,11 +8,11 @@ class Program
     {
         var vehiculos = JsonStorage.CargarVehiculos();
         var envios = JsonStorage.CargarEnvios();
-      foreach (var envio in envios)
+      /*foreach (var envio in envios)
 {
     Console.WriteLine($"[Debug] ID={envio.Id}, Producto={envio.Producto}, Estado='{envio.Estado}'");
 }
-        Console.WriteLine($"Envios cargados desde JSON: {envios.Count}");
+        Console.WriteLine($"Envios cargados desde JSON: {envios.Count}");*/
 
        
         var asignador = new AsignacionService(vehiculos.Cast<IVehiculo>().ToList(), envios);
@@ -53,11 +53,9 @@ class Program
                  break;
                 case "3":
                 asignador.AsignarVehiculosAPendientes();
-                 Console.WriteLine("\nListado actualizado de envíos:");
-                foreach (var envio in envios)  // asumamos que 'envios' es la lista original accesible
-                    {
-                          Console.WriteLine($"ID: {envio.Id}, Estado: {envio.Estado}, Vehículo Asignado: {envio.VehiculoAsignadoId ?? "Ninguno"}");
-                     }
+                
+
+                 
                 Console.WriteLine("Presione una tecla para continuar...");
                  Console.ReadKey();
                  break;
