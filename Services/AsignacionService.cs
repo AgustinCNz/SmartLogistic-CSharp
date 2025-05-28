@@ -38,14 +38,15 @@ public void AsignarVehiculosAPendientes()
             .OrderBy(v => v.CapacidadKg) // Ordena por menor capacidad
             .FirstOrDefault(); // Elige el primero disponible que cumple
 
+            // Verificamos que el objeto implemente IVehiculo y lo casteamos para acceder a sus propiedades
+            if (vehiculo is IVehiculo v)
+            {
+                envio.VehiculoAsignadoId = v.Id; // Asigna el vehículo al envío
+                envio.Estado = "En tránsito";    // Cambia el estado del envío
+                v.Estado = "En ruta";            // Cambia el estado del vehículo
+                Console.WriteLine($"Envío {envio.Id} asignado al vehículo {v.Id} ({v.Tipo})");
+            }
 
-        if (vehiculo is IVehiculo v)
-        {
-            envio.VehiculoAsignadoId = v.Id;
-            envio.Estado = "En tránsito";
-            v.Estado = "En ruta";
-            Console.WriteLine($"Envío {envio.Id} asignado al vehículo {v.Id} ({v.Tipo})");
-        }
         else
         {
             Console.WriteLine($"No se encontró vehículo disponible para el envío {envio.Id}");
