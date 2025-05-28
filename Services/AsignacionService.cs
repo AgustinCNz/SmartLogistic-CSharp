@@ -32,11 +32,12 @@ public void AsignarVehiculosAPendientes()
     {
         Console.WriteLine($"[Debug Estado] Envío {envio.Id}: Estado='{envio.Estado}'");
 
-        var vehiculo = _vehiculos
-            .OfType<Vehiculo>() // Cambio importante
-            .Where(v => v.PuedeAsignarseA(envio))
-            .OrderBy(v => v.CapacidadKg)
-            .FirstOrDefault();
+            var vehiculo = _vehiculos
+            .OfType<Vehiculo>() // Solo se consideran objetos que heredan de Vehiculo
+            .Where(v => v.PuedeAsignarseA(envio)) // Aplica reglas de negocio: estado, capacidad, refrigeración
+            .OrderBy(v => v.CapacidadKg) // Ordena por menor capacidad
+            .FirstOrDefault(); // Elige el primero disponible que cumple
+
 
         if (vehiculo is IVehiculo v)
         {
